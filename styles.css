@@ -1,0 +1,71 @@
+/* body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pai {
+  border: 1px solid black;
+  height: 300px;
+  margin: 5%;
+  width: 90%;
+}
+
+.filho {
+  background-color: lightgray;
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner {
+  background-image: url(http://1.bp.blogspot.com/__P_7vWHCFuc/TIkSiCFxR3I/AAAAAAAAAJ8/gAYJ0iMR-hA/s1600/Ronaldo-Preserva%C3%A7%C3%A3o.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  width: 100vw;
+} */
+
+.grid{
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(4, 25vw);
+grid-template-areas: 
+"header header header header"
+"main main . saidebar"
+"main main . ."
+"footer footer footer footer";
+
+}
+
+header{
+  grid-area: header;
+  background-color: yellow;
+  display: flex;
+  align-content: space-between;
+  justify-content:space-between ;
+  align-items: center;
+  width: 100vw;
+  padding: 0 10px;
+  
+}
+
+
+main{
+  grid-area: main;
+  background-color: green;
+}
+.saidebar{
+  grid-area: saidebar;
+  background-color: blue;
+}
+
+footer{
+
+  grid-area: footer;
+  background-color: black;
+}
